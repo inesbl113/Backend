@@ -279,3 +279,9 @@ C:\Users\ib\Desktop\Trello\Trello_backend-master\obj\Debug\net8.0\scopedcss\proj
 C:\Users\ib\Desktop\Trello\Trello_backend-master\obj\Debug\net8.0\back.csproj.Up2Date
 C:\Users\ib\Desktop\Trello\Trello_backend-master\obj\Debug\net8.0\back.genruntimeconfig.cache
 C:\Users\ib\Desktop\Trello\Trello_backend-master\obj\Debug\net8.0\ref\back.dll
+C:\Users\ib\Desktop\Trello\Trello_backend-master\obj\Debug\net8.0\back.sourcelink.json
+C:\Users\ib\Desktop\Trello\Trello_backend-master\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\ib\Desktop\Trello\Trello_backend-master\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ib\Desktop\Trello\Trello_backend-master\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ib\Desktop\Trello\Trello_backend-master\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ib\Desktop\Trello\Trello_backend-master\obj\Debug\net8.0\back.MvcApplicationPartsAssemblyInfo.cs
