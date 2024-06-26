@@ -22,8 +22,8 @@ namespace CLONETRELLOBACK.Models
         .ThenInclude(l => l.Tasks) 
         .ThenInclude(t => t.Comments) // Corrigé ici
         .ToListAsync();
-}git checkout -b swager
-
+}
+    
         public async Task<Projects> GetProject(int id)
         {
             return await _context.Projects.FirstOrDefaultAsync(p => p.Id == id);
