@@ -1,5 +1,5 @@
 using CLONETRELLOBACK.Data;
-using CLONETRELLOBACK.Models;
+using CLONETRELLOBACK.Models; // Corrigé pour utiliser la bonne casse
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;

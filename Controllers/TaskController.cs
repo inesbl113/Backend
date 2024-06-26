@@ -31,7 +31,7 @@ namespace CLONETRELLOBACK.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Task>> GetTask(int id)
         {
-            var task = await _tasksDao.GetTask(id);
+            var task = await _tasksDao.GetTaskById(id); // Correction appliquée ici
 
             if (task == null)
             {
@@ -82,7 +82,7 @@ namespace CLONETRELLOBACK.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTask(int id)
         {
-            var task = await _tasksDao.GetTask(id);
+            var task = await _tasksDao.GetTaskById(id); // Correction appliquée ici
             if (task == null)
             {
                 return NotFound();

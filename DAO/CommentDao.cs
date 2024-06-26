@@ -1,8 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using CLONETRELLOBACK.Data;
 using CLONETRELLOBACK.models;
+
+
+using CLONETRELLOBACK.Models;
 
 namespace CLONETRELLOBACK.Models
 {
@@ -17,12 +21,19 @@ namespace CLONETRELLOBACK.Models
 
         public async Task<IEnumerable<Comments>> GetComments()
         {
-            return await _context.Comments.ToListAsync();
+            return await _context.Comments
+                         .Include(c => c.Task)
+                         .ThenInclude(t => t.List)
+                         .ThenInclude(c => c.Project)
+                         .ToListAsync();
         }
 
         public async Task<Comments> GetComment(int id)
         {
-            return await _context.Comments.FirstOrDefaultAsync(c => c.Id == id);
+            return await _context.Comments
+                         .Include(c => c.Task)
+                         .ThenInclude(t => t.List)
+                         .FirstOrDefaultAsync(c => c.Id == id);
         }
 
         public async Task<Comments> AddComment(Comments comment)

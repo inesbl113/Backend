@@ -20,10 +20,14 @@ namespace CLONETRELLOBACK.Models
             return await _context.Tasks.ToListAsync();
         }
 
-        public async Task<Tasks> GetTask(int id)
-        {
-            return await _context.Tasks.FirstOrDefaultAsync(t => t.Id == id);
-        }
+        public async Task<Tasks> GetTaskById(int id)
+{
+              return await _context.Tasks // Supprimez le point après 'Tasks'
+                  .Include(t => t.List)
+                  .ThenInclude(l => l.Project)
+                  .FirstOrDefaultAsync(t => t.Id == id);
+    
+}
 
         public async Task<Tasks> AddTask(Tasks task)
         {

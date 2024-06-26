@@ -22,5 +22,24 @@ namespace CLONETRELLOBACK.Data
                 );
             }
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Projects>()
+                .HasMany(p => p.Lists)
+                .WithOne(l => l.Project)
+                .HasForeignKey(l => l.ProjectId);
+
+            modelBuilder.Entity<Lists>()
+                .HasMany(l => l.Tasks)
+                .WithOne(t => t.List)
+                .HasForeignKey(t => t.ListId);
+
+            // Configuration simplifiée pour la relation entre Tasks et Comments
+            modelBuilder.Entity<Tasks>()
+                .HasMany(t => t.Comments)
+                .WithOne(c => c.Task)
+                .HasForeignKey(c => c.TaskId);
+        }
     }
 }

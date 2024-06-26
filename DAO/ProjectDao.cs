@@ -15,10 +15,14 @@ namespace CLONETRELLOBACK.Models
             _context = context;
         }
 
-        public async Task<IEnumerable<Projects>> GetProjects()
-        {
-            return await _context.Projects.Include(p => p.Lists).ToListAsync();
-        }
+    public async Task<IEnumerable<Projects>> GetProjects()
+{
+    return await _context.Projects
+        .Include(p => p.Lists)
+        .ThenInclude(l => l.Tasks) 
+        .ThenInclude(t => t.Comments) // Corrigé ici
+        .ToListAsync();
+}git checkout -b swager
 
         public async Task<Projects> GetProject(int id)
         {

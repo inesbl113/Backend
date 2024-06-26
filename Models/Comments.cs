@@ -9,7 +9,7 @@ namespace CLONETRELLOBACK.models
         public string Author { get; set; } // Auteur du commentaire
         public DateTime CreatedAt { get; set; }  // Date de création du commentaire
 
-        // // Navigation properties
+        
         public int TaskId { get; set; } // Clé étrangère vers la tâche associée au commentaire
         public Tasks? Task { get; set; } // Tâche associée au commentaire
 
