@@ -8,11 +8,29 @@ using Newtonsoft.Json;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+/*builder
+    .Services.AddControllersWithViews()
+    .AddNewtonsoftJson(options =>
+    {
+        //options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+        options.JsonSerializerOptions.DefaultIgnoreCondition = System
+            .Text
+            .Json
+            .Serialization
+            .JsonIgnoreCondition
+            .WhenWritingNull;
+    });*/
+
+// Add services to the container.
 builder
     .Services.AddControllersWithViews()
     .AddNewtonsoftJson(options =>
     {
-        options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+        options.SerializerSettings.ReferenceLoopHandling = Newtonsoft
+            .Json
+            .ReferenceLoopHandling
+            .Ignore;
+        options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore; // Ignorer les valeurs nulles lors de la sérialisation
     });
 
 // Configure the DbContext with a connection string from configuration

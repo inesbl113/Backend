@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CLONETRELLOBACK.models
 {
@@ -7,10 +9,11 @@ namespace CLONETRELLOBACK.models
         public int Id { get; set; } // Identifiant unique du commentaire
         public string Text { get; set; } // Contenu du commentaire
         public string Author { get; set; } // Auteur du commentaire
-        public DateTime CreatedAt { get; set; }  // Date de création du commentaire
+        public DateTime CreatedAt { get; set; } // Date de création du commentaire
 
-        
         public int TaskId { get; set; } // Clé étrangère vers la tâche associée au commentaire
+
+        [ForeignKey("TaskId")]
         public Tasks? Task { get; set; } // Tâche associée au commentaire
 
         public Comments()

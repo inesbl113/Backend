@@ -17,7 +17,12 @@ namespace CLONETRELLOBACK.Models
 
         public async Task<IEnumerable<Tasks>> GetTasks()
         {
-            return await _context.Tasks.ToListAsync();
+              var tasks = await _context.Tasks
+                  .Include(t => t.List) // Inclut la liste associée à chaque tâche
+                  .Include(t => t.Comments) // Inclut les commentaires associés à chaque tâche
+                  .ToListAsync();
+
+                return tasks;
         }
 
         public async Task<Tasks> GetTaskById(int id)
