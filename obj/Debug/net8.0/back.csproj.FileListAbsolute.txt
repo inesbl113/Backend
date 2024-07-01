@@ -433,3 +433,4 @@ C:\Users\ib\Desktop\TRELLO-VS code\Backend-master\obj\Debug\net8.0\back.genrunti
 C:\Users\ib\Desktop\TRELLO-VS code\Backend-master\obj\Debug\net8.0\ref\back.dll
 =======
 >>>>>>> origin/master
+C:\Users\ib\Desktop\TRELLO-VS code\Backend-master\obj\Debug\net8.0\back.sourcelink.json
