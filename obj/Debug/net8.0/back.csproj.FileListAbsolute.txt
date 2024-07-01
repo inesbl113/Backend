@@ -285,6 +285,7 @@ C:\Users\ib\Desktop\Trello\Trello_backend-master\obj\Debug\net8.0\refint\back.dl
 C:\Users\ib\Desktop\Trello\Trello_backend-master\obj\Debug\net8.0\back.pdb
 C:\Users\ib\Desktop\Trello\Trello_backend-master\obj\Debug\net8.0\back.genruntimeconfig.cache
 C:\Users\ib\Desktop\Trello\Trello_backend-master\obj\Debug\net8.0\ref\back.dll
+<<<<<<< HEAD
 C:\Users\ib\Desktop\TRELLO-VS code\Backend-master\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\ib\Desktop\TRELLO-VS code\Backend-master\bin\Debug\net8.0\appsettings.json
 C:\Users\ib\Desktop\TRELLO-VS code\Backend-master\bin\Debug\net8.0\back.staticwebassets.runtime.json
@@ -430,3 +431,5 @@ C:\Users\ib\Desktop\TRELLO-VS code\Backend-master\obj\Debug\net8.0\refint\back.d
 C:\Users\ib\Desktop\TRELLO-VS code\Backend-master\obj\Debug\net8.0\back.pdb
 C:\Users\ib\Desktop\TRELLO-VS code\Backend-master\obj\Debug\net8.0\back.genruntimeconfig.cache
 C:\Users\ib\Desktop\TRELLO-VS code\Backend-master\obj\Debug\net8.0\ref\back.dll
+=======
+>>>>>>> origin/master

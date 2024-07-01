@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Y6kQ+ronlpU=",
   "success": true,
   "projectFilePath": "C:\\Users\\ib\\Desktop\\TRELLO-VS code\\Backend-master\\back.csproj",
+=======
+  "dgSpecHash": "nwaNg1u9Ai8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ib\\Desktop\\Trello\\Trello_backend-master\\back.csproj",
+>>>>>>> origin/master
   "expectedPackageFiles": [
     "C:\\Users\\ib\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ib\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

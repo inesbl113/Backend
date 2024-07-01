@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\ib\\Desktop\\TRELLO-VS code\\Backend-master\\back.csproj": {}
   },
   "projects": {
@@ -15,11 +16,36 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "C:\\Users\\ib\\Desktop\\Trello\\Trello_backend-master\\back.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ib\\Desktop\\Trello\\Trello_backend-master\\back.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ib\\Desktop\\Trello\\Trello_backend-master\\back.csproj",
+        "projectName": "back",
+        "projectPath": "C:\\Users\\ib\\Desktop\\Trello\\Trello_backend-master\\back.csproj",
+        "packagesPath": "C:\\Users\\ib\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ib\\Desktop\\Trello\\Trello_backend-master\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> origin/master
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+<<<<<<< HEAD
+=======
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+>>>>>>> origin/master
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -101,7 +127,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+>>>>>>> origin/master
         }
       }
     }
